@@ -1,0 +1,72 @@
+.top_nav{
+    background-color: rgb(209, 209, 209);
+}
+.top_nav img{
+    max-width: 10%;
+    max-height: 10%;
+}
+
+.box{
+    color:rgb(56, 3, 28);
+    height:500px;
+    width: 250px;
+    position: left;
+    top:80px;
+    left:200px;
+    text-align: center;
+    border-color: black;
+}
+
+input[type="text"],input[type="password"]{
+    margin-bottom:20px;
+    padding:8px;
+    border:none;
+    border-bottom:1px solid rgb(41, 41, 41);
+}
+
+input[type="submit"]{
+    width:120px;
+    height:35px;
+    color:rgb(255, 255, 255);
+    background-color:rgb(163, 206, 8);
+    font-family: "montserrat";
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor:pointer;
+
+}
+
+.fb_btn{
+    font-family: "montserrat";
+    font-size: 20px;
+    width:120px;
+    height: 35px;
+    background-color:#32508e;
+    border-color: #32508e;
+    cursor:pointer;
+    color: white;
+    border-radius:5px;
+}
+.ggle_btn{
+    font-family: "montserrat";
+    font-size: 20px;
+    width:120px;
+    height: 35px;
+    background-color:rgb(236, 45, 45);
+    color: white;
+    border-radius:5px;
+    cursor:pointer;
+}
+.ggle_btn:hover{
+    opacity: 0.8;
+    box-shadow:0px 2px 4px rgb(41, 41, 41);
+}
+.fb_btn:hover{
+    opacity: 0.8;
+    box-shadow:0px 2px 4px rgb(41, 41, 41);
+}
+
+input[type="submit"]:hover,input[type="submit"]:focus{
+    opacity: 0.8;
+    box-shadow: rgb(41, 41, 41);
+}
