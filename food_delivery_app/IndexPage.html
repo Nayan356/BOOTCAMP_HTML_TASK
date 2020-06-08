@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+crossorigin="anonymous">
+<script src="https://use.fontawesome.com/77f6cff6b8.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Creating an Index page"/>
+    <title>IndexPage</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body style="background-color:rgb(240,240,240);">    
+    <nav class="navbar navbar-expand-sm bg-white">
+        
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="happycow.gif" height="50"></a>
+            <font size="-1">
+            <ul class="navbar-nav">
+                <li class="nav-item mr-3">
+                    <a class="nav-link text-secondary font-weight-bold" href="#">
+                        Home</a></li>
+                <li class="nav-item  mr-3"><div>
+                    <a class="nav-link text-secondary font-weight-bold" href="#">
+                        Offers <span class="badge text-white" style="background-color: violet;"> <font size="-2">New</font></span></a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown  mr-3">
+                    <a class="nav-link text-secondary font-weight-bold dropdown-toggle" href="#" data-toggle="dropdown">Restaurants</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-secondary" href="#">Listing</a></li>
+                            <li><a class="dropdown-item text-secondary" href="#">Detail + cart</a></li>
+                            <li><a class="dropdown-item text-secondary" href="#">Checkout</a></li>
+                        </ul></li>
+                <li class="nav-item dropdown mr-3">
+                    <a class="nav-link text-secondary font-weight-bold dropdown-toggle" href="#" data-toggle="dropdown">Pages</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item text-secondary" href="#">Track Order</a></li>
+                        <li><a class="dropdown-item text-secondary" href="#">Invoice</a></li>
+                        <li><a class="dropdown-item text-secondary" href="#">Login</a></li>
+                        <li><a class="dropdown-item text-secondary" href="#">Register</a></li>
+                        <li><a class="dropdown-item text-secondary" href="#">404</a></li>
+                        <li><a class="dropdown-item text-secondary" href="#">Extra:)</a></li>
+                    </ul>                
+                </li>
+                <li class="nav-item  mr-3">
+                    <a class="nav-link text-secondary font-weight-bold" href="#">Cart</a></li>
+                <li class="nav-item  mr-3">
+                        <a class="nav-link text-secondary font-weight-bold" href="#">
+                        <img class="rounded-circle" src="acclogo.png" style="width: 7%;height: 7%;"> My Account</a>
+                </li>
+            </ul></font>
+        </div>
+    </nav>
+ 
+<div class="container py-5">
+     <h1 class="font-weight-bold">Find Awesome Deals<span class="font-weight-normal"> in Australia</span></h1>
+     <p class="text-secondary">List of top restaurants,cafes, pubs and bars in Australia, based on trends</p>
+     <div class="form-group">
+         <button class="btn float-left dropdown mr-2" style="background-color: white;">
+        <a class="dropdown-toggle text-secondary class-picker " data-toggle="dropdown" data-live-search="true" role="button" href="#">
+            <i class="fas fa-search"></i>  Quick Searches</a>
+              
+       <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Breakfast</a></li>
+            <li><a class="dropdown-item" href="#">Lunch</a></li>
+            <li><a class="dropdown-item" href="#">Dinner</a></li>
+            <li><a class="dropdown-item" href="#">Cafes</a></li>
+            <li><a class="dropdown-item" href="#">Delivery</a></li>
+        </ul>
+        </button>
+          
+         <input class="form-control w-25 float-left" type="text" placeholder="Enter your delivery location" aria-label="Search">
+         <button class="btn ml-2 py-1 px-4 text-white font-weight-bold" style="background-color:violet;">Search</button>
+     </div>
+    <p class="mt-5"> E.g. Beverages,Pizzas, Chinese,Bakery,Indian...</p>
+
+    <div id="recipe_Carousel" class="carousel slide container align-items-start" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item row active" style="width:50%">
+                <div class="column col-2">
+                    <div class="card py-1" style="width: 130%;">
+                            <div style="text-align:center">
+                                <img class="rounded-circle" src="ss.jpeg" style="width:50%; height:50%;">
+                            </div>
+                            <section class="py-2" style="text-align:center; color:violet">
+                                <font size="-1">Indian</font><br>
+                                <font style="color:grey" size="-1">542</font>
+                            </section>
+                    </div>
+                </div>
+                <div class="column col-2">
+                    <div class="card py-1" style="width:130%;">
+                            <div style="text-align:center">
+                                <img class="rounded-circle" src="ss.jpeg" style="width:50%; height:50%;">
+                            </div>
+                            <section class="py-2" style="text-align:center; color: violet">
+                                <font size="-1">Chinese</font><br>
+                                <font style="color:grey" size="-1">123</font>
+                            </section>
+                    </div>
+                </div>
+                <div class="column col-2">
+                    <div class="card py-1" style="width:130%;">
+                            <div style="text-align:center">
+                                <img class="rounded-circle" src="ss.jpeg" style="width:50%; height:50%;">
+                            </div>
+                            <section class="py-2" style="text-align:center; color: violet">
+                                <font size="-1">Mexican</font><br>
+                                <font style="color:grey" size="-1">123</font>
+                            </section>
+                    </div>
+                </div>
+                <div class="column col-2">
+                    <div class="card py-1" style="width:130%;">
+                            <div style="text-align:center">
+                                <img class="rounded-circle" src="ss.jpeg" style="width:50%; height:50%;">
+                            </div>
+                            <section class="py-2" style="text-align:center; color:violet">
+                                <font size="-1">American</font><br>
+                                <font style="color:grey" size="-1">123</font>
+                            </section>
+                    </div>
+                </div>
+                <div class="column col-2">
+                    <div class="card py-1" style="width:130%;">
+                            <div style="text-align:center">
+                                <img class="rounded-circle" src="ss.jpeg" style="width:50%; height:50%;">
+                            </div>
+                            <section class="py-2" style="text-align:center; color:violet">
+                                <font size="-1">Turkish</font><br>
+                                <font style="color:grey" size="-1">123</font>
+                            </section>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item row" style="width:50%">
+                <div class="column col-2">
+                    <div class="card py-1" style="width: 130%;">
+                            <div style="text-align:center">
+                                <img class="rounded-circle" src="ss.jpeg" style="width:50%; height:50%;">
+                            </div>
+                            <section class="py-2" style="text-align:center; color:violet">
+                                <font size="-1">Italian</font><br>
+                                <font style="color:grey" size="-1">123</font>
+                            </section>
+                    </div>
+                </div>
+                <div class="column col-2">
+                    <div class="card py-1" style="width:130%;">
+                            <div style="text-align:center">
+                                <img class="rounded-circle" src="ss.jpeg" style="width:50%; height:50%;">
+                            </div>
+                            <section class="py-2" style="text-align:center; color:violet">
+                                <font size="-1">Thai</font><br>
+                                <font style="color:grey" size="-1">123</font>
+                            </section>
+                    </div>
+                </div>
+                <div class="column col-2">
+                    <div class="card py-1" style="width:130%;">
+                            <div style="text-align:center">
+                                <img class="rounded-circle" src="ss.jpeg" style="width:50%; height:50%;">
+                            </div>
+                            <section class="py-2" style="text-align:center; color:violet">
+                                <font size="-1">Moroccan</font><br>
+                                <font style="color:grey" size="-1">123</font>
+                            </section>
+                    </div>
+                </div>
+                <div class="column col-2">
+                    <div class="card py-1" style="width:130%;">
+                            <div style="text-align:center">
+                                <img class="rounded-circle" src="ss.jpeg" style="width:50%; height:50%;">
+                            </div>
+                            <section class="py-2" style="text-align:center; color:violet">
+                                <font size="-1">Indonesian</font><br>
+                                <font style="color:grey" size="-1">123</font>
+                            </section>
+                    </div>
+                </div>
+                <div class="column col-2">
+                    <div class="card py-1" style="width:130%;">
+                            <div style="text-align:center">
+                                <img class="rounded-circle" src="ss.jpeg" style="width:50%; height:50%;">
+                            </div>
+                            <section class="py-2" style="text-align:center; color:violet">
+                                <font size="-1">Japanese</font><br>
+                                <font style="color:grey" size="-1">123</font>
+                            </section>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <a class="carousel-control-prev w-auto" href="#recipe_Carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next w-auto" href="#recipe_Carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+    <div class="container-fluid bg-white py-5" align=center>
+        <!-- <div class="column"> -->
+        <img src="download1.jpg" class="img-fluid mr-3 rounded" role="button">
+        <img src="download2.jpg" class="img-fluid mr-3 rounded" role="button" width="300" height="300">
+        <img src="download3.jpg" class="img-fluid mr-3 rounded" role="button" width="300" height="300>
+        <!-- </div> -->
+        <!-- <div class="column"> -->
+        <img src="download4.jpg" class="img-fluid mr-3 rounded" role="button" width="300" height="300> 
+        
+        <!-- </div> -->
+    </div>
+
+    <div class="p-5">
+        <h2 align=center class="pt-5 pb-2 m-0">Popular Brands </h2>
+        <p class="text-secondary pb-5" align=center>Top Restaurants, cafes, pubs, and bars in Australia, based on trends</p>
+        <p class="text-secondary pb-5" align=center>_______</p>
+<!--        <div class="row mx-auto my-auto"> -->
+            <div id="recipeCarousel" class="carousel slide container align-items-start" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active row">
+                        <div class="column col">
+                            <div class="card">
+                                <img class="img-fluid card-img-top" src="slider1.jpg">
+                                <div class="card-body">
+                                    <div class="card-title"><h5>The Salad House</h5></div>
+                                    <ul class="list-horizontal">
+                                        <li><font size="-1">Vegan</font></li>
+                                        <li><font size="-1">pescetariana</font></li>
+                                     </ul>
+                                    <div><i class="fa fa-clock-o" aria-hidden="true"></i> 30-40 minutes
+                                    <font class="float-right text-secondary" size="-1">$10 Bowl</font>
+                                    </div>
+                                    <font class="font-italic font-weight-bold" size="-2"><span class="badge badge-success">Offer</span> 65% off | Use coupon HAPPYCOW</font>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column col">
+                            <div class="card">
+                                <img class="img-fluid card-img-top" src="slider5.jpg" > 
+                                <div class="card-body">
+                                    <div class="card-title"><h5>Green Village</h5></div>
+                                    <ul class="list-horizontal">
+                                        <li><font size="-1">Vegan</font></li>
+                                        <li><font size="-1">pescetariana</font></li>
+                                     </ul>
+                                    <div><i class="fa fa-clock-o" aria-hidden="true"></i> 30-40 minutes
+                                    <font class="float-right text-secondary" size="-1">$10 Bowl</font>
+                                    </div>
+                                    <font class="font-italic font-weight-bold" size="-2"><span class="badge badge-success">Offer</span> 65% off | Use coupon HAPPYCOW</font>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column col">
+                            <div class="card">
+                                <img class="img-fluid card-img-top" src="slider2.jpeg">
+                                <div class="card-body">
+                                    <div class="card-title"><h5>Petisco Vegano</h5></div>
+                                    <ul class="list-horizontal">
+                                        <li><font size="-1">American</font></li>
+                                        <li><font size="-1">Vegen</font></li>
+                                     </ul>
+                                    <div><i class="fa fa-clock-o" aria-hidden="true"></i> 30-40 minutes
+                                    <font class="float-right text-secondary" size="-1">$10 Bowl</font>
+                                    </div>
+                                    <font class="font-italic font-weight-bold" size="-2"><span class="badge badge-success">Offer</span> 65% off | Use coupon HAPPYCOW</font>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column col">
+                            <div class="card">
+                                <img class="img-fluid card-img-top" src="slider4.jpg">
+                                <div class="card-body">
+                                    <div class="card-title"><h5>Falafalerie</h5></div>
+                                    <ul class="list-horizontal">
+                                        <li><font size="-1">American</font></li>
+                                        <li><font size="-1">Vegan</font></li>
+                                     </ul>
+                                    <div><i class="fa fa-clock-o" aria-hidden="true"></i> 30-40 minutes
+                                    <font class="float-right text-secondary" size="-1">$10 Bowl</font>
+                                    </div>
+                                    <font class="font-italic font-weight-bold" size="-2"><span class="badge badge-success">Offer</span> 65% off | Use coupon HAPPYCOW</font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item row">
+                        <div class="column col">
+                            <div class="card">
+                                <img class="img-fluid card-img-top" src="slider6.jpg">
+                                <div class="card-body">
+                                    <div class="card-title"><h5>Candle Cafe</h5></div>
+                                    <ul class="list-horizontal">
+                                        <li><font size="-1">Vegan</font></li>
+                                        <li><font size="-1">Seafood</font></li>
+                                        </ul>
+                                    <div><i class="fa fa-clock-o" aria-hidden="true"></i> 30-40 minutes
+                                    <font class="float-right text-secondary" size="-1">$10 Bowl</font>
+                                    </div>
+                                    <font class="font-italic font-weight-bold" size="-2"><span class="badge badge-success">Offer</span> 65% off | Use coupon HAPPYCOW</font>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column col">
+                            <div class="card">
+                                <img class="img-fluid card-img-top" src="slider7.jpg" height ="100">
+                                <div class="card-body">
+                                    <div class="card-title"><h5>Cinnaholic</h5></div>
+                                    <ul class="list-horizontal">
+                                        <li><font size="-1">American</font></li>
+                                        <li><font size="-1">Indian</font></li>
+                                     </ul>
+                                    <div><i class="fa fa-clock-o" aria-hidden="true"></i> 30-40 minutes
+                                    <font class="float-right text-secondary" size="-1">$10 Bowl</font>
+                                    </div>
+                                    <font class="font-italic font-weight-bold" size="-2"><span class="badge badge-success">Offer</span> 65% off | Use coupon HAPPYCOW</font>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column col">
+                            <div class="card">
+                                <img class="img-fluid card-img-top" src="slider8.jpg">
+                                <div class="card-body">
+                                    <div class="card-title"><h5>Blossoming Lotus</h5></div>
+                                    <ul class="list-horizontal">
+                                        <li><font size="-1">Mexican</font></li>
+                                        <li><font size="-1">Thai</font></li>
+                                     </ul>
+                                    <div><i class="fa fa-clock-o" aria-hidden="true"></i> 30-40 minutes
+                                    <font class="float-right text-secondary" size="-1">$10 Bowl</font>
+                                    </div>
+                                    <font class="font-italic font-weight-bold" size="-2"><span class="badge badge-success">Offer</span> 65% off | Use coupon HAPPYCOW</font>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column col">
+                            <div class="card">
+                                <img class="img-fluid card-img-top" src="slider9.jpg">
+                                <div class="card-body">
+                                    <div class="card-title"><h5>G-Zen</h5></div>
+                                    <ul class="list-horizontal">
+                                        <li><font size="-1">American</font></li>
+                                        <li><font size="-1">Indian</font></li>
+                                     </ul>
+                                    <div><i class="fa fa-clock-o" aria-hidden="true"></i> 30-40 minutes
+                                    <font class="float-right text-secondary" size="-1">$10 Bowl</font>
+                                    </div>
+                                    <font class="font-italic font-weight-bold" size="-2"><span class="badge badge-success">Offer</span> 65% off | Use coupon HAPPYCOW</font>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+    </div>
+    <div align=center style="background-color: white;">
+        <h2 class="pt-5">Become a Member</h2>
+        <p class="text-secondary"> dummy text</p>
+        <button type=button class="btn btn-success text-white my-5 px-4 py-2">
+            Create an Account  <i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="pb-5" align=center style="background-color: white;">
+        <h5> Operate a food store or a restaurant? 
+            <span ><a  href="#" class="text-danger"> Work with us.</a></span></h5>
+    </div>
+<div class="my-5 row">
+    <div class="col-5">
+        <div class="container m-5">
+            <font class="mb-5" size="-1">SUBSCRIBE TO OUR NEWSLETTER</font>
+            <div class="input-group mt-3" style="width: 70%;">
+                <input type="text" class="form-control" placeholder="Please enter your Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <span class="input-group-text text-white" style="background-color: violet;" id="basic-addon2">Subscribe</span>
+                </div>
+            </div>
+            <div><font size="-1">
+                <span><a style="color: rgb(0, 255, 157);" href="#">Register now</a></span> to get Updates on
+                <span><a style="color: violet;" href="#">Offers and Coupons</a></span></font>
+            </div>
+            <div class="mt-3">
+                <font size="-1" class="text-secondary">DOWNLOAD APP</font><br>
+                <button class="btn btn-primary" style="background-color: black;">
+                    <i class="fab fa-google-play"></i><font> Google Play</font></button>
+                <button class="btn btn-primary" style="background-color: black;">
+                    <i class="fab fa-apple"></i> Apple Store</button>
+
+            </div>
+        </div>
+    </div>
+    <ul class="py-5 list-inline col-7">
+            <ul class="mx-5" style="list-style-type: none;">
+                <h5 class="list-group-item-heading"><font class="text-dark">About HC</font></h5>
+                <li><font class="text-secondary" size="-1">About Us</font></li>
+                <li><font class="text-secondary" size="-1">Culture</font></li>
+                <li><font class="text-secondary" size="-1">Blog</font></li>
+                <li><font class="text-secondary" size="-1">Career</font></li>
+                <li><font class="text-secondary" size="-1">Contact</font></li>
+            </ul>
+            <ul class="mx-5" style="list-style-type: none;">
+                <h5 class="list-group-item-heading"><font class="text-dark">For Foodies</font></h5>
+                <li><font class="text-secondary" size="-1">Community</font></li>
+                <li><font class="text-secondary" size="-1">Developers</font></li>
+                <li><font class="text-secondary" size="-1">Blogger Help</font></li>
+                <li><font class="text-secondary" size="-1">Verified Users</font></li>
+                <li><font class="text-secondary" size="-1">Code of Conduct</font></li>
+            </ul>
+            <ul class="mx-5" style="list-style-type: none;">
+                <h5 class="list-group-item-heading"><font class="text-dark">For Restaurant</font></h5>
+                <li><font class="text-secondary" size="-1">Advertise</font></li>
+                <li><font class="text-secondary" size="-1">Add a Restaurant</font></li>
+                <li><font class="text-secondary" size="-1">Claim your Listings</font></li>
+                <li><font class="text-secondary" size="-1">For Businesses</font></li>
+                <li><font class="text-secondary" size="-1">Owner Guidelines</font></li>
+            </ul>
+    </ul>
+</div>
+<div class="bg-white py-5">
+<div class="container">
+    <ul class="list-horizontal"><font size="-1">
+        <h5 class="list-group-item-heading ml-2">Popular Countries</h5>
+        <li>Australia</li> <li>Brazil</li> <li>China</li> <li>Denmark</li> <li>Egypt</li>
+        <li>Finland</li> <li>Greece</li> <li>India</li> <li>Holland</li><li>United States</li>
+        <li>Australia</li> <li>Brazil</li> <li>China</li> <li>Denmark</li> <li>Egypt</li>
+        <li>Finland</li> <li>Greece</li> <li>India</li> <li>Holland</li><li>United States</li>
+        <li>Australia</li> <li>Brazil</li> <li>China</li> <li>Denmark</li> <li>Egypt</li>
+        <li>Finland</li> <li>Greece</li> <li>India</li> <li>Holland</li><li>United States</li>
+        <li>Australia</li> <li>Brazil</li> <li>China</li> <li>Denmark</li> <li>Egypt</li>
+        <li>Finland</li> <li>Greece</li> <li>India</li> <li>Holland</li><li>United States</li>
+        <li>Australia</li> <li>Brazil</li> <li>China</li> <li>Denmark</li> <li>Egypt</li>
+        <li>Finland</li> <li>Greece</li> <li>India</li> <li>Holland</li><li>United States</li>
+    </font>
+    </ul>
+    <ul class="list-horizontal mt-3"><font size="-1">
+        <h5 class="list-group-item-heading ml-2">Popular Countries</h5>
+        <li>American</li> <li>Canadian</li> <li>Continental</li> <li>Mexican</li> <li>Italian</li>
+        <li>English</li> <li>Vegetarian</li> <li>Indian</li> <li>Vegan</li><li>Turkish</li>
+        <li>Thai</li> <li>Thai</li> <li>Chinese</li> <li>Middle Eastern</li> <li>Street food</li>
+        <li>Indian</li> <li>Japanese</li> <li>Continental</li> <li>Mexican</li> <li>Italian</li>
+        <li>American</li> <li>Vegetarian</li> <li>Indian</li> <li>Vegan</li><li>Indonesian</li>
+        <li>Thai</li> <li>Thai</li> <li>Chinese</li> <li>Middle Eastern</li> <li>Street food</li>
+
+    </font>
+    </ul>
+</div>
+</div>
+<div class="my-3" align=center>
+    <span>TESTING THE</span><span style="color:violet;"> THE INDEX PAGE</span>
+</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+ul{
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+    padding:0;
+}
+
+.list-horizontal li {
+	display:inline-block;
+}
+.list-horizontal li:before {
+	content:"\00a0\007C\00a0\00a0"; /* '\00a0\2022\00a0\00a0'; */
+	color:rgb(30, 30, 30);
+	color:rgba(0,0,0,0.5);
+	font-size:11px;
+}
